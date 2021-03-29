@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/development/page-reference/back-office/product/form/</link>
     <description>Recent content in The Product Form on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/development/page-reference/back-office/product/form/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/development/page-reference/back-office/product/form/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Product Form before 1.7.8</title>
       <link>https://devdocs.prestashop.com/1.7/development/page-reference/back-office/product/form/product-form-before-1-7-8/</link>

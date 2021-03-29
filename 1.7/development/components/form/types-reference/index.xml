@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/</link>
     <description>Recent content in Types Reference on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/development/components/form/types-reference/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/development/components/form/types-reference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CategoryChoiceTreeType</title>
       <link>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/category-choice-tree/</link>

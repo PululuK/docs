@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/webservice/tutorials/advanced-use/</link>
     <description>Recent content in Advanced use on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/webservice/tutorials/advanced-use/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/webservice/tutorials/advanced-use/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Additional list parameters</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/tutorials/advanced-use/additional-list-parameters/</link>

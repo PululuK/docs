@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/themes/reference/</link>
     <description>Recent content in Theme development reference on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/themes/reference/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/themes/reference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrating from PrestaShop 1.6</title>
       <link>https://devdocs.prestashop.com/1.7/themes/reference/migration-from-16/</link>
@@ -27,7 +23,7 @@ When using the automatic upgrade from PrestaShop 1.6 to 1.7, your theme will be 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/themes/reference/overriding-modules/</guid>
-      <description>Overriding modules When you write a theme, you often need to override the templates and assets coming from a module so that they match your theme&amp;rsquo;s specific markup needs. Themes can override modules&amp;rsquo; assets (CSS and JavaScript only) by placing the corresponding file at a specific location.
+      <description>Overriding modules When you write a theme, you often need to override the templates and assets coming from a module so that they match your theme&amp;rsquo;s specific markup needs. Themes can override modules&#39; assets (CSS and JavaScript only) by placing the corresponding file at a specific location.
 With PrestaShop 1.7, all module overriding code goes to the modules directory (in your module&amp;rsquo;s own directory). Every PS 1.7 module developer should be aware of this change (introduced with PR 5020: https://github.</description>
     </item>
     

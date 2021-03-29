@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/testing/ui-tests/</link>
     <description>Recent content in UI tests on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/testing/ui-tests/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/testing/ui-tests/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to contribute and create UI tests</title>
       <link>https://devdocs.prestashop.com/1.7/testing/ui-tests/how-to-contribute-and-create-ui-tests/</link>

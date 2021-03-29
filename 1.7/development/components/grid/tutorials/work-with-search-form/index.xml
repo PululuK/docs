@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-search-form/</link>
     <description>Recent content in How to work with the Search Form on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-search-form/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-search-form/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create your custom form factory</title>
       <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/work-with-search-form/custom-form-factory/</link>

@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/contribute/documentation/</link>
     <description>Recent content in How to improve the documentation on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/contribute/documentation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/contribute/documentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why write documentation</title>
       <link>https://devdocs.prestashop.com/1.7/contribute/documentation/why/</link>

@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/</link>
     <description>Recent content in Translation on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/development/internationalization/translation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/development/internationalization/translation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Translation Domains</title>
       <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</link>

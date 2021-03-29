@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/</link>
     <description>Recent content in How to migrate Back Office pages to Symfony on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migration project and strategy</title>
       <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/strategy/</link>

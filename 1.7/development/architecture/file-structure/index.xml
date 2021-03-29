@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/development/architecture/file-structure/</link>
     <description>Recent content in File structure on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/development/architecture/file-structure/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/development/architecture/file-structure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding the &#34;src&#34; folder</title>
       <link>https://devdocs.prestashop.com/1.7/development/architecture/file-structure/understanding-src-folder/</link>

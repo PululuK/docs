@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/</link>
     <description>Recent content in Contribution guidelines on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing a good commit message</title>
       <link>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/writing-a-good-commit-message/</link>

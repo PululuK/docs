@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/contribute/</link>
     <description>Recent content in Contribute on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/contribute/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/contribute/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to use GitHub to report an issue</title>
       <link>https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/</link>

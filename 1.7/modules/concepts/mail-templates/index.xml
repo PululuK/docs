@@ -5,11 +5,7 @@
     <link>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/</link>
     <description>Recent content in Mail Templates on PrestaShop Developer Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to extend a layout in a theme from a module</title>
       <link>https://devdocs.prestashop.com/1.7/modules/concepts/mail-templates/extend-a-layout-from-module/</link>
