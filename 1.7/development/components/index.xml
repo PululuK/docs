@@ -19,6 +19,17 @@ This object contains two attributes:
     </item>
     
     <item>
+      <title>Back Office Help sidebar</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/back-office-help-sidebar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/back-office-help-sidebar/</guid>
+      <description>The Back Office Help sidebar Back Office controller returns Back Office HTML pages.
+Most of these Back Office pages have a common HTML structure:
+ a layout at the top a menu navigation bar on the left the page content at the center a collapsable right sidebar that contains documentation  About the help sidebar content When the BO user clicks on the &amp;lsquo;Help&amp;rsquo; button, the sidebar opens and displays the related Documentation page for the Back Office page that the user browses.</description>
+    </item>
+    
+    <item>
       <title>The Faceted Search component</title>
       <link>https://devdocs.prestashop.com/1.7/development/components/faceted-search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

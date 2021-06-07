@@ -82,5 +82,15 @@ Working on what make a shop an unique experience, as a Developer you will be ask
 You can alter the rendering using the provided data or push the PDF Rendering to its best, introducing your very own information that will made your PDF files amazing.</description>
     </item>
     
+    <item>
+      <title>Multistore</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/multistore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/multistore/</guid>
+      <description>Specifics of multistore module development Usage of configuration variables As indicated in the Configuration section, some of the methods from the Configuration object have three optional parameters, which make it possible to target any other existing store on the current PrestaShop installation: id_shop, id_shop_group and id_lang.
+While these parameters can prove useful when having to handle multiple specific and known stores from one of the presented Configuration method, they are not recommended for general usage.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -153,17 +153,7 @@ Any PrestaShop module, once installed on an online shop, can interact with one o
       <description>How testing works in PrestaShop  PrestaShop is a complex software and uses automated testing to ensure that the new additions to the codebase do not break existing behaviors.
 Automated tests are located in tests and tests-legacy folders.
 What kind of tests do PrestaShop use? In the tests folder, you will find:
- Unit tests Integration tests Web acceptance tests  Unit tests Unit tests are powered by PHPUnit. They test one and only one php class, mocking/stubbing any dependencies that class has.</description>
-    </item>
-    
-    <item>
-      <title>Minor release lifecycle</title>
-      <link>https://devdocs.prestashop.com/1.7/project/release/patch-release-lifecycle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/release/patch-release-lifecycle/</guid>
-      <description>Minor release lifecycle Kanban and scope Each minor version is defined by a feature scope, that is, a number of GitHub issues that we put in a version Kanban. How these issues are picked or sorted is the responsibility of the Product Team, who spends a lot of time gathering feedback from the PrestaShop community to make sure the next minor version addresses the most important needs.
-For example PrestaShop 1.</description>
+ Unit tests Integration tests User interface tests  Unit tests Unit tests are powered by PHPUnit. They test one and only one php class, mocking/stubbing any dependencies that class has.</description>
     </item>
     
     <item>
@@ -184,6 +174,17 @@ Even though using autoload block in composer.json helps us to autoload classes f
       <guid>https://devdocs.prestashop.com/1.7/modules/creation/module-translation/new-system/</guid>
       <description>New module translation system  The new module translation system is based on the new system introduced in PrestaShop 1.7 for the Core and Native modules. It aims to harmonize translation systems throughout PrestaShop while providing backwards compatibility.
 This feature is only available for PrestaShop 1.7.6 and later. If you need to support older versions, see the Classic translation system. Vocabulary  Wording – A string that you may want to translate.</description>
+    </item>
+    
+    <item>
+      <title>Patch release lifecycle</title>
+      <link>https://devdocs.prestashop.com/1.7/project/release/patch-release-lifecycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/project/release/patch-release-lifecycle/</guid>
+      <description>Patch release lifecycle Patch releases are &amp;ldquo;maintainance&amp;rdquo; releases: they provide bug fixes and security patches, but do not provide enhancements or new features. They are part of a necessary maintenance process.
+Scope of maintainance When a minor version is released, such as PrestaShop 1.7.7.0, the related branch becomes the latest and maintained branch. This means that, when PrestaShop 1.7.7.0 is out:
+ There will be no more PrestaShop 1.7.6 patch releases, for either bug or security issues There might be, if necessary, patch releases for PrestaShop 1.</description>
     </item>
     
     <item>
@@ -245,10 +246,10 @@ Here are two good reasons to try and convince you to start writing documentation
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/modules/creation/module-translation/classic-system/</guid>
-      <description>Classic module translation system The classic translation system is a heritage from previous versions of PrestaShop and provides retrocompatibility with PrestaShop 1.6. If you plan on supporting only versions 1.7.6 and up, consider using the New translation system.
-Native modules work differently
-In PrestaShop 1.7, native modules (the ones bundled with PrestaShop) use a different system. Read more about it here: Native module translation.
- Modern (symfony-based) modules can only be translated using the New translation system.</description>
+      <description>Classic module translation system The classic translation system is a heritage from previous versions of PrestaShop and provides retrocompatibility with PrestaShop 1.6.
+Do you need this?
+ If you plan on supporting only versions 1.7.6 and up, consider using the New translation system. Modern (symfony-based) modules and native modules only support the new system.   How it works This system works in two steps.
+1. Translation functions are used to display your module&amp;rsquo;s wordings in another language PrestaShop provides functions that allow PHP files and Smarty templates to display translated wordings.</description>
     </item>
     
     <item>
@@ -268,6 +269,18 @@ In PrestaShop 1.7, native modules (the ones bundled with PrestaShop) use a diffe
       <guid>https://devdocs.prestashop.com/1.7/development/database/dbquery/</guid>
       <description>The DBQuery class The DBQuery class is a query builder which helps you create SQL queries. For instance:
 &amp;lt;?php $sql = new DbQuery(); $sql-&amp;gt;select(&amp;#39;*&amp;#39;); $sql-&amp;gt;from(&amp;#39;cms&amp;#39;, &amp;#39;c&amp;#39;); $sql-&amp;gt;innerJoin(&amp;#39;cms_lang&amp;#39;, &amp;#39;l&amp;#39;, &amp;#39;c.id_cms = l.id_cms AND l.id_lang = &amp;#39;.(int)$id_lang); $sql-&amp;gt;where(&amp;#39;c.active = 1&amp;#39;); $sql-&amp;gt;orderBy(&amp;#39;position&amp;#39;); return Db::getInstance()-&amp;gt;executeS($sql); Main methods  __toString() Generate and get the query. build() Generate and get the query (return a string). from(string $table, mixed $alias = null) Set table for FROM clause. groupBy(string $fields) Add a GROUP BY restriction.</description>
+    </item>
+    
+    <item>
+      <title>FAQ about Vue.js</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/templating/vuejs/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/templating/vuejs/faq/</guid>
+      <description>How to send data from PHP to Vue.js? Use the method Media::addJsDef([]) to make your data available in the window context. If other modules can be present on the same, prefix your names with the module name to avoid name collision.
+This is a convenient way to send the links Vue.js could call, generated by the router.
+Example:
+Media::addJsDef([ &amp;#39;myVueJsModuleRouteToSomeAction&amp;#39; =&amp;gt; $this-&amp;gt;context-&amp;gt;link-&amp;gt;getAdminLink( &amp;#39;AdminAjaxMyVueJsModule&amp;#39;, true, [], [ &amp;#39;action&amp;#39; =&amp;gt; &amp;#39;RouteToSomeAction&amp;#39;, &amp;#39;ajax&amp;#39; =&amp;gt; 1, ] ), ]); How to send data from Symfony controller to Vue.</description>
     </item>
     
     <item>
@@ -311,7 +324,7 @@ Benchmark with Siege tool Benchmark methodology In order to benchmark the perfor
       <guid>https://devdocs.prestashop.com/1.7/contribute/contribution-process/how-pull-requests-are-processed/</guid>
       <description>How Pull Requests are processed All submitted pull requests go through a thorough process which aims to provide a stable, consistent and reliable software that we all know under the name PrestaShop. Here is this process in details.
 Automatic tasks when you open a Pull Request When you submit a new Pull Request to the project repository, some automatic checks are triggered.
-Continuous Integration Four automatic code checker tools are active on the project.</description>
+Continuous Integration The project relies on GitHub Action to perform multiple checks against submitted Pull Requests.</description>
     </item>
     
     <item>
@@ -391,14 +404,13 @@ As we saw in the previous code sample, we need the get() method to retrieve an X
     </item>
     
     <item>
-      <title>Patch release lifecycle</title>
+      <title>Minor release lifecycle</title>
       <link>https://devdocs.prestashop.com/1.7/project/release/minor-release-lifecycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/project/release/minor-release-lifecycle/</guid>
-      <description>Patch release lifecycle Patch releases are &amp;ldquo;maintainance&amp;rdquo; releases: they provide bug fixes and security patches, but do not provide enhancements or new features. They are part of a necessary maintenance process.
-Scope of maintainance When a minor version is released, such as PrestaShop 1.7.7.0, the related branch becomes the latest and maintained branch. This means that, when PrestaShop 1.7.7.0 is out:
- There will be no more PrestaShop 1.7.6 patch releases, for either bug or security issues There might be, if necessary, patch releases for PrestaShop 1.</description>
+      <description>Minor release lifecycle Kanban and scope Each minor version is defined by a feature scope, that is, a number of GitHub issues that we put in a version Kanban. How these issues are picked or sorted is the responsibility of the Product Team, who spends a lot of time gathering feedback from the PrestaShop community to make sure the next minor version addresses the most important needs.
+For example PrestaShop 1.</description>
     </item>
     
     <item>
@@ -495,18 +507,6 @@ It is an Active Record kind of class (see: Active record pattern). The table att
     </item>
     
     <item>
-      <title>Release a native PrestaShop module</title>
-      <link>https://devdocs.prestashop.com/1.7/project/release/release-a-native-ps-module/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/release/release-a-native-ps-module/</guid>
-      <description>Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
-This is what we call &amp;ldquo;native PrestaShop modules&amp;rdquo;. The source code of these modules is hosted on GitHub.
-This page explains what is needed to release these modules.
-Requirements Mandatory requirements The module should be valid which means:</description>
-    </item>
-    
-    <item>
       <title>Retrieve a resource</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/tutorials/prestashop-webservice-lib/retrieve-resource/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -598,7 +598,7 @@ As we explained in a previous tutorial the webservice provides two resource sche
       <guid>https://devdocs.prestashop.com/1.7/development/database/structure/</guid>
       <description>Maintaining the database Database structure definition Global definition The database structure of PrestaShop can be found in install/data/db_structure.sql (1.7.3.x releases example).
 It is used one time, during the installation of PrestaShop. It contains the structure of almost all tables. If a table needs to be added or modified, this the file you should open.
-Table in DB but not in db_structure.sql With PrestaShop 1.7, some tables have been migrated to doctrine entities (i.</description>
+Table in DB but not in db_structure.sql With PrestaShop 1.7, some tables are now linked to Doctrine entities (i.</description>
     </item>
     
     <item>
@@ -683,9 +683,10 @@ Thinking about it, we could improve the current grid to highlight business-drive
       
       <guid>https://devdocs.prestashop.com/1.7/basics/introduction/</guid>
       <description>Fundamentals of PrestaShop Development PrestaShop was conceived so that third-party modules could easily build upon its foundations, making it an extremely customizable e-commerce software.
-PrestaShop’s customization is based on three possibilities:
- Themes, Modules, Overriding.  Themes are explored in full in the Designer Guide.
-Modules and the override system are explored in this Developer Guide, starting with the “Concepts” section below. You can learn more about each in the following chapters:</description>
+PrestaShop’s customization is based on four possibilities:
+ Themes, Modules, Hooks, Overriding.  Themes are explored in full in the Themes section.
+Modules, hooks and the override system are explored in this page and in the Modules section.
+By default, PrestaShop is provided with more than 100 modules, enabling you to launch your online business quickly and for free.</description>
     </item>
     
     <item>
@@ -864,6 +865,16 @@ Available options    Properties Type Expected value     field string required Th
     </item>
     
     <item>
+      <title>Domain services</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/domain/domain-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/domain/domain-services/</guid>
+      <description>Domain services As mentioned in CQRS principles, a Command is a representation of a single domain use case. To prevent Command Handlers from duplicating code and depending on each other, it is usually best to avoid implementing the actual logic in the Command Handler itself, and delegate it to Domain Services instead. These services are responsible for logic such as:
+ Persisting the entities (a.k.a ObjectModel in current prestashop architecture) data into database Validating the entities Performing various modifications of related data structures etc.</description>
+    </item>
+    
+    <item>
       <title>Getting Started</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/getting-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -880,8 +891,9 @@ REST defines roughly a style of software architecture, which promotes the use of
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/basics/keeping-up-to-date/backup/</guid>
-      <description>How to backup PrestaShop Before starting anything, you must think first about safety. Any modification made on a shop could break it, so you must make sure all your data has been backed up before going further. This basically implies saving two things: your files and your database.
-We will give you all the details you may need to run an upgrade, but we can’t be held responsible for any damage caused to your shop during the process.</description>
+      <description>How to backup PrestaShop Important
+It is strongly recommended not to leave your backups at the root of your store or in another place where could be exposed on publicly.
+ Before starting anything, you must think first about safety. Any modification made on a shop could break it, so you must make sure all your data has been backed up before going further. This basically implies saving two things: your files and your database.</description>
     </item>
     
     <item>
@@ -954,10 +966,8 @@ Layout {% extends &amp;#39;@MailThemes/modern/core/order_conf.html.twig&amp;#39;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/contribute/contribute-reporting-issues/</guid>
-      <description>How to use GitHub to report an issue PrestaShop is using GitHub to track bugs and issues. This is the best place to describe bugs you are witnessing on your PrestaShop installation, and have the developers try to fix it.
-Creating your account To participate, you need to create an account to use the bug tracker.
-Create your account here.
-Fill all fields and validate your account request, then follow the different steps.</description>
+      <description>How to use GitHub to report an issue PrestaShop uses GitHub to track bugs and issues. This is the best place to report the bugs you are witnessing on your PrestaShop shop.
+You need a free GitHub account to collaborate. If you don&amp;rsquo;t have one yet, you can create it here. Creating an issue To create your first issue, go to the list of issues and click on the &amp;ldquo;New issue&amp;rdquo; button on the right.</description>
     </item>
     
     <item>
@@ -967,7 +977,7 @@ Fill all fields and validate your account request, then follow the different ste
       
       <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/html/</guid>
       <description>HtmlColumn Type  Displays raw data without any escaping. Can be used to display HTML in grid.
-Available options    Properties Type Expected value     field string required The record field name that the column displays.    Example usage &amp;lt;?php use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\HtmlColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $htmlColumn = new HtmlColumn(&amp;#39;description&amp;#39;); $htmlColumn-&amp;gt;setName(&amp;#39;Description&amp;#39;); $htmlColumn-&amp;gt;setOptions([ &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;description&amp;#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($htmlColumn); </description>
+Using this column could open you to XSS attacks, if you are using this column take steps to make sure that data displayed by this column is secure. If you are using form together with grid, safe way is to use FormattedTextareaType . Available options    Properties Type Expected value     field string required The record field name that the column displays.</description>
     </item>
     
     <item>
@@ -987,6 +997,17 @@ Available options    Properties Type Expected value     src_field string require
       
       <guid>https://devdocs.prestashop.com/1.7/development/architecture/introduction/</guid>
       <description>Learn how PrestaShop is structured: back-end, front-end, business stack, themes and modules</description>
+    </item>
+    
+    <item>
+      <title>Introduction to translation</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/introduction/</guid>
+      <description>Introduction to translation At its core, translation consists in programmatically transforming a wording into its equivalent in a target language, using a translation dictionary. If the loaded dictionary is in Spanish, the output will be in Spanish.
+Vocabulary Before you begin working with translations, you should get familiarized with the following concepts:
+ Wording (or &amp;ldquo;message&amp;rdquo;) An abstraction of a phrase that will be translated to any given language. It&amp;rsquo;s usually written as plain English, in order to make it easier to understand.</description>
     </item>
     
     <item>
@@ -1110,12 +1131,14 @@ Available options    Properties Type Expected value     field string required Th
     </item>
     
     <item>
-      <title>Translation Domains</title>
-      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</link>
+      <title>Unit testing</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/unit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</guid>
-      <description>Translation Domains Sometimes wordings may seem vague when seen out of context. For example, &amp;ldquo;Delete&amp;rdquo;. Just like that, we can imagine what is it used for, but we don&amp;rsquo;t really have much information about it. What are we deleting? From a translator standpoint, this is very hard, because not only do we not know where it&amp;rsquo;s supposed to be used, but it could be used in several places, with different meanings.</description>
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/unit/</guid>
+      <description>Unit testing Smoke testing A smoke test is a really simple and basic test that ensure the page will load with the right HTTP code. This won&amp;rsquo;t ensure the page will works as expected but if the test fails, this ensure the page is not functional.
+To add a new test, you need to add a new entry in the Data Provider of SurvivalTest class:
+&amp;lt;?php namespace LegacyTests\Integration\PrestaShopBundle\Controller\Admin; // ... /** * @group demo * * To execute these tests: use &amp;#34;.</description>
     </item>
     
     <item>
@@ -1140,7 +1163,7 @@ You can alter the rendering using the provided data or push the PDF Rendering to
     </item>
     
     <item>
-      <title>Installating a local environment</title>
+      <title>Installing a local environment</title>
       <link>https://devdocs.prestashop.com/1.7/basics/installation/localhost/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1156,6 +1179,16 @@ You can alter the rendering using the provided data or push the PDF Rendering to
       <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/action/</guid>
       <description>ActionColumn Type  This column type allows adding actions to your Grid rows. The action targets the corresponding row. For more info about possible actions see Actions reference.
 Available options    Properties Type Expected value     actions array default: null List of actions assigned to each row.    Example usage &amp;lt;?php use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\ActionColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $actionColumn = new ActionColumn(&amp;#39;actions&amp;#39;); $actionColumn-&amp;gt;setName(&amp;#39;Actions&amp;#39;); $actionColumn-&amp;gt;setOptions([ &amp;#39;actions&amp;#39; =&amp;gt; [ -&amp;gt;add((new LinkRowAction(&amp;#39;delete&amp;#39;)) -&amp;gt;setIcon(&amp;#39;delete&amp;#39;) -&amp;gt;setOptions([ &amp;#39;route&amp;#39; =&amp;gt; &amp;#39;admin_custom_route&amp;#39;, &amp;#39;route_param_name&amp;#39; =&amp;gt; &amp;#39;mailId&amp;#39;, &amp;#39;route_param_field&amp;#39; =&amp;gt; &amp;#39;id_mail&amp;#39;, &amp;#39;confirm_message&amp;#39; =&amp;gt; &amp;#39;Delete selected item?</description>
+    </item>
+    
+    <item>
+      <title>Behat testing</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/behat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/behat/</guid>
+      <description>Behat testing It is important that you get familiar with the Behats principles before reading further. You can find the official behat documentation here. A behaviour (behat) tests are a part of integration tests. They allow testing how multiple components are working together. In PrestaShop, behats are used to test the Application and Domain layer integration - basically all the CQRS commands and queries.
+Database During behat tests the actual database queries are executed, therefore before testing you need to run a command composer create-test-db to create a test database.</description>
     </item>
     
     <item>
@@ -1342,6 +1375,15 @@ In legacy code, hooks are dispatched using Hook::exec().</description>
     </item>
     
     <item>
+      <title>Translation Domains</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-domains/</guid>
+      <description>Translation Domains Sometimes wordings may seem vague when seen out of context. For example, &amp;ldquo;Delete&amp;rdquo;. Just like that, we can imagine what is it used for, but we don&amp;rsquo;t really have much information about it. What are we deleting? From a translator standpoint, this is very hard, because not only do we not know where it&amp;rsquo;s supposed to be used, but it could be used in several places, with different meanings.</description>
+    </item>
+    
+    <item>
       <title>Upgrade Module internal behavior</title>
       <link>https://devdocs.prestashop.com/1.7/development/upgrade-module/upgrade-module-internal-behavior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1516,6 +1558,16 @@ In the /src folder you&amp;rsquo;ll find 3 main folders with different purposes:
     </item>
     
     <item>
+      <title>Using the Translator to translate wordings</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/using-the-translator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/using-the-translator/</guid>
+      <description>Using the Translator to translate wordings This section provides an quick reference on how to use the Translator. For more information, read Symfony&amp;rsquo;s documentation on Using the Translator. PHP files To translate wordings in PHP files, you first need an instance of the Translator service (explained below). Then, you can use the trans() method to translate your wording:
+&amp;lt;?php echo $translator-&amp;gt;trans(&amp;#39;This product is no longer available.&amp;#39;, [], &amp;#39;Shop.Notifications.Error&amp;#39;); The trans() method takes three arguments:</description>
+    </item>
+    
+    <item>
       <title>Writing Markdown</title>
       <link>https://devdocs.prestashop.com/1.7/contribute/documentation/how/writing-markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1556,8 +1608,7 @@ How to contribute Contributors wishing to edit a module&amp;rsquo;s files should
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/</guid>
-      <description>Controller and Routing Modern/Symfony Controllers Read the Symfony documentation on Controllers and Routing. Every migrated page needs one or more Controllers: if you consider that a legacy Controller needs to be split into multiple controllers (for example: different URLs), it&amp;rsquo;s the right time to do it.
-New controllers should be placed in the src/PrestaShopBundle/Controller/Admin folder. Starting on 1.7.3, controllers are being progressively organized in sub-folders following the Back Office menu. For instance, if you are migrating a page located into &amp;ldquo;Advanced Parameters&amp;rdquo; section, put it into src/PrestaShop/Controller/Admin/Configure/AdvancedParameters.</description>
+      <description>Controller and Routing Before creating a new symfony controller please read and follow principles described in Symfony controllers &amp;amp; routing. Controllers are responsible for performing &amp;ldquo;Actions&amp;rdquo;. Actions are methods of Controllers which mapped to a route, and that return a Response. Migration tips  If you consider that a legacy Controller needs to be split into multiple controllers (for example: different URLs), it&amp;rsquo;s the right time to do it. Controllers are not available for override and can be regarded as internal classes, therefore we don&amp;rsquo;t consider changing Controller&amp;rsquo;s namespace as a backward-compatibility break.</description>
     </item>
     
     <item>
@@ -1614,6 +1665,16 @@ The same note as above, in order to have this module working you must have set i
 This section covers the listing pages, which includes: category, search result, products per brand, best seller list, new product list and so on.
 In order to reduce code duplication, the only necessary template is the file catalog/listing/product-list.tpl.
 Extending product-list template We already covered how PrestaShop chooses the right template to use so we know that the category template extends the product-list template.</description>
+    </item>
+    
+    <item>
+      <title>Native module translation</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/native-module-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/native-module-translation/</guid>
+      <description>Native module translation To find out the basics of module translation, read Module Translation. In PrestaShop lingo, &amp;ldquo;native modules&amp;rdquo; refers to all the modules that are bundled and distributed with the Core.
+In difference with 3rd party modules, native modules&#39; translation catalogues are distributed with the Core itself. Thanks to this, Native modules are translated using the New translation system since 1.7.0.</description>
     </item>
     
     <item>
@@ -1709,6 +1770,16 @@ Users will be able to choose the layout for each page from the theme&amp;rsquo;s
     </item>
     
     <item>
+      <title>Tips and tricks</title>
+      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-tips/</guid>
+      <description>Translation tips and tricks Adding new wordings Wordings for the Core and Native modules can only be translated if they are declared in PrestaShop&amp;rsquo;s default translation catalogue. Therefore, whenever a new wording is added to the core or to a native module, it must be added to the default catalogue as well.
+Normally you would have to manually add each wording the appropriate default catalogue files (located in the app/Resources/translations/default folder).</description>
+    </item>
+    
+    <item>
       <title>Cleaning up</title>
       <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/clean-up/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1773,17 +1844,6 @@ Available options    Properties Type Expected value     field string required Re
     </item>
     
     <item>
-      <title>Testing</title>
-      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/</guid>
-      <description>Testing You are encouraged to add both unit and functional tests for every new class you have created.
-You must add a smoke test (also called &amp;ldquo;survival&amp;rdquo;) for every new page you migrate.
-Smoke testing A smoke test is a really simple and basic test that ensure the page will load with the right HTTP code. This won&amp;rsquo;t ensure the page will works as expected but if the test fails, this ensure the page is not functional.</description>
-    </item>
-    
-    <item>
       <title>UIKit</title>
       <link>https://devdocs.prestashop.com/1.7/development/uikit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1792,6 +1852,28 @@ Smoke testing A smoke test is a really simple and basic test that ensure the pag
       <description>What&amp;rsquo;s the PrestaShop UIKit? The UIKit is a project extending Bootstrap 4 in order to provide some components with PrestaShop&amp;rsquo;s colors. You can see every component on this page.
 How do we use the UIKit? We use it by adding it into our npm dependency, and then you&amp;rsquo;ve multiple possibilities to use it.
  You can import dist files, it means that you won&amp;rsquo;t be able to use our variables outside of the UIKit.</description>
+    </item>
+    
+    <item>
+      <title>Validation</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/validation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/validation/</guid>
+      <description>Validation The purpose of validation is to protect the application from failures, state inconsistency, security related issues etc. PrestaShop has few different levels of validation:
+ Forms (the CRUD or Settings) - are using Symfony validation constraints to prevent the user from providing invalid information while also enriching the user experience. For example if a form input expects Yes or No, but user submitted value XYZ we want to reject the data and inform the user what was wrong.</description>
+    </item>
+    
+    <item>
+      <title>Release a native PrestaShop module</title>
+      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/release-a-native-ps-module/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/release-a-native-ps-module/</guid>
+      <description>Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
+This is what we call &amp;ldquo;native PrestaShop modules&amp;rdquo;. The source code of these modules is hosted on GitHub.
+This page explains what is needed to release these modules.
+Requirements Mandatory requirements The module should be valid which means:</description>
     </item>
     
     <item>
@@ -1819,7 +1901,18 @@ Tabs registration In order to register new links, open your main module class.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/webservice/resources/attachments/</guid>
-      <description>Resources for Attachments Attachment    Name Format Required Max size Description     file isGenericName ✔️ 40    file_name isGenericName ❌ 128    file_size isUnsignedId ❌     mime isCleanHtml ✔️ 128    name isGenericName ✔️ 32    description isCleanHtml ❌     associations  ❌      Blank schema &amp;lt;prestashop xmlns:xlink=&amp;#34;http://www.</description>
+      <description>Resources for Attachments  Attachment    Name Format Required Max size Description     file isGenericName ✔️ 40    file_name isGenericName ❌ 128    file_size isUnsignedId ❌     mime isCleanHtml ✔️ 128    name isGenericName ✔️ 32    description isCleanHtml ❌     associations  ❌      Blank schema &amp;lt;prestashop xmlns:xlink=&amp;#34;http://www.</description>
+    </item>
+    
+    <item>
+      <title>Back Office Help sidebar</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/back-office-help-sidebar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/back-office-help-sidebar/</guid>
+      <description>The Back Office Help sidebar Back Office controller returns Back Office HTML pages.
+Most of these Back Office pages have a common HTML structure:
+ a layout at the top a menu navigation bar on the left the page content at the center a collapsable right sidebar that contains documentation  About the help sidebar content When the BO user clicks on the &amp;lsquo;Help&amp;rsquo; button, the sidebar opens and displays the related Documentation page for the Back Office page that the user browses.</description>
     </item>
     
     <item>
@@ -1920,6 +2013,17 @@ Updated dependencies The following dependencies have been updated in order to pr
     </item>
     
     <item>
+      <title>Changes in PrestaShop 1.7.8</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.8/</guid>
+      <description>Notable changes in PrestaShop 1.7.8 PHP support PrestaShop 1.7.8 adds supports for PHP 7.4.
+Updated dependencies The following dependencies have been updated in order to provide support for PHP 7.4:
+Production dependencies    Package name From To Compare     beberlei/doctrineextensions v1.2.6 v1.2.7 &amp;hellip;   composer/ca-bundle 1.2.6 1.2.8 &amp;hellip;   doctrine/annotations v1.8.0 1.10.4 &amp;hellip;   doctrine/cache 1.10.0 1.10.2 &amp;hellip;   doctrine/collections 1.6.4 1.</description>
+    </item>
+    
+    <item>
       <title>Code of Conduct</title>
       <link>https://devdocs.prestashop.com/1.7/project/code-of-conduct/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1962,6 +2066,17 @@ Updated dependencies The following dependencies have been updated in order to pr
       
       <guid>https://devdocs.prestashop.com/1.7/webservice/resources/content_management_system/</guid>
       <description>Resources for Content management system Content    Name Format Required Max size Description     id_cms_category isUnsignedInt ❌  CMS Category ID   position  ❌     indexation  ❌     active  ❌     meta_description isGenericName ❌ 512    meta_keywords isGenericName ❌ 255    meta_title isGenericName ✔️ 255    head_seo_title isGenericName ❌ 255    link_rewrite isLinkRewrite ✔️ 128    content isCleanHtml ❌ 3999999999999     Blank schema &amp;lt;prestashop xmlns:xlink=&amp;#34;http://www.</description>
+    </item>
+    
+    <item>
+      <title>Context helper</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/console/context-helper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/console/context-helper/</guid>
+      <description>CLI Context helper The legacy framework of PrestaShop was not built to be run from a Command Line.
+The consequence is that many of its functions require specific data to be properly initialized, and these parts are being initialized when an HTTP request is handled by the framework.
+In order to use legacy classes and components in Console, you need to initialize these parts. To make it easy, a LegacyContextLoader helper class was introduced in version 1.</description>
     </item>
     
     <item>
@@ -2109,7 +2224,17 @@ Code example &amp;lt;?php // path/to/your/CustomType.php  use PrestaShopBundle\F
       
       <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/generatable-text/</guid>
       <description>GeneratableTextType Extends TextType with additional button which allows to generate random value for input.
-Type options    Option Type Default value Description     generated_value_length int 32 The length of value to be generated    Required Javascript components    Component Description     ../admin-dev/themes/new-theme/js/components/form/generatable-input.js Generates a random value for input.    Code example &amp;lt;?php // path/to/your/CustomType.php  use PrestaShopBundle\Form\Admin\Type\GeneratableTextType; class CustomType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder -&amp;gt;add(&amp;#39;key&amp;#39;, GeneratableTextType::class, [ &amp;#39;generated_value_length&amp;#39; =&amp;gt; 16, ]) ; } } Then in Javascript you have to enable GeneratableInput component.</description>
+Type options    Option Type Default value Description     generated_value_length int 32 The length of value to be generated    Required Javascript components    Component Description     ../admin-dev/themes/new-theme/js/components/generatable-input.js Generates a random value for input.    Code example &amp;lt;?php // path/to/your/CustomType.php  use PrestaShopBundle\Form\Admin\Type\GeneratableTextType; class CustomType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder -&amp;gt;add(&amp;#39;key&amp;#39;, GeneratableTextType::class, [ &amp;#39;generated_value_length&amp;#39; =&amp;gt; 16, ]) ; } } Then in Javascript you have to enable GeneratableInput component.</description>
+    </item>
+    
+    <item>
+      <title>Generate a Symfony route</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/route-generation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/controllers/admin-controllers/route-generation/</guid>
+      <description>Generate a Symfony route from a module Manual generation If the module uses a symfony controller then the best way of route generation is described in symfony docs. However, module, especially if using legacy controllers, don&amp;rsquo;t always have access to the symfony container or router. The Link object offers some helpers to help generate urls related to Symfony controllers and routes.
+Using router via Link::getUrlSmarty  &amp;lt;?php use Link; // Generate url with Symfony route $symfonyUrl = Link::getUrlSmarty(array(&amp;#39;entity&amp;#39; =&amp;gt; &amp;#39;sf&amp;#39;, &amp;#39;route&amp;#39; =&amp;gt; &amp;#39;admin_product_catalog&amp;#39;)); // Generate url with Symfony route and arguments $symfonyUrl = Link::getUrlSmarty(array( &amp;#39;entity&amp;#39; =&amp;gt; &amp;#39;sf&amp;#39;, &amp;#39;route&amp;#39; =&amp;gt; &amp;#39;admin_product_unit_action&amp;#39;, &amp;#39;sf-params&amp;#39; =&amp;gt; array( &amp;#39;action&amp;#39; =&amp;gt; &amp;#39;delete&amp;#39;, &amp;#39;id&amp;#39; =&amp;gt; 42, ) )); Using router via $link-&amp;gt;getAdminLink  &amp;lt;?</description>
     </item>
     
     <item>
@@ -2158,6 +2283,17 @@ if (&amp;#39;AdminOrders&amp;#39; === Tools::getValue(&amp;#39;controller&amp;#3
       <description>I need help If you have questions or need help, please do not open a GitHub issue as we use GitHub issues only to discuss about bugs and new features for the PrestaShop project.
 The very best place to start looking for an answer is:
  Here (the Developer documentation), if you are a developer The User&amp;rsquo;s guide if you are a user  If you are a developer and you think there is a missing item in the Developer documentation, consider creating an issue on the Documentation Repository.</description>
+    </item>
+    
+    <item>
+      <title>Image FAQ</title>
+      <link>https://devdocs.prestashop.com/1.7/faq/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/faq/image/</guid>
+      <description>Image FAQ Q: Why can I not use more than 9 999 999 images?
+A: The limitation of the .htaccess file prevents the use of more than 9 999 999 images because there is a limit of 9 back references ($1, $2, $3,&amp;hellip; $9) in mod_rewrite. The $10 $11 etc back references are being interpreted as just $1.
+You can exceed this limitation by adding the needed rules in your .</description>
     </item>
     
     <item>
@@ -2323,12 +2459,13 @@ Code example Add MoneyWithSuffixType to your form.
     </item>
     
     <item>
-      <title>Native module translation</title>
-      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/native-module-translation/</link>
+      <title>Multistore</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/concepts/multistore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/native-module-translation/</guid>
-      <description>Native module translation The module&amp;rsquo;s text strings are written in English, but you might want French, Spanish or Polish shop owners to use your module too. You therefore have to translate those strings into those languages, both the front office and the back office strings. Ideally, you should translate your module in all the languages that are installed on your shop. This could be a tedious task, but a whole system has been put in place in order to help you out.</description>
+      <guid>https://devdocs.prestashop.com/1.7/modules/concepts/multistore/</guid>
+      <description>Specifics of multistore module development Usage of configuration variables As indicated in the Configuration section, some of the methods from the Configuration object have three optional parameters, which make it possible to target any other existing store on the current PrestaShop installation: id_shop, id_shop_group and id_lang.
+While these parameters can prove useful when having to handle multiple specific and known stores from one of the presented Configuration method, they are not recommended for general usage.</description>
     </item>
     
     <item>
@@ -2895,6 +3032,16 @@ Type options    Option Type Default Description     multiple bool true Whether m
     </item>
     
     <item>
+      <title>Stock FAQ</title>
+      <link>https://devdocs.prestashop.com/1.7/faq/stock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/faq/stock/</guid>
+      <description>Stock FAQ  StockAvailable StockMovement  Q: Where exactly can I find the stock of a specified product?
+A: All the stock information for every Product (and Combination) is stored in the StockAvailable entity/table. You will find duplicate values in Product and Combination object via their quantity fields, but they are deprecated fields that are only kept for backward compatibility and will be removed in future versions. The only true source of information for stock data is StockAvailable.</description>
+    </item>
+    
+    <item>
       <title>Stock movement reasons</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/resources/stock_movement_reasons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2997,6 +3144,17 @@ Code example Add SwitchType to your form.
     </item>
     
     <item>
+      <title>Symfony controllers &amp; routing</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/modern/controller-routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/modern/controller-routing/</guid>
+      <description>Symfony controllers &amp;amp; routing Read the Symfony documentation on Controllers and Routing. Controllers are located in src/PrestaShopBundle/Controller/Admin folder. Starting on 1.7.3, controllers are being progressively organized in sub-folders following the Back Office menu. For instance, the TaxController is located in src/PrestaShop/Controller/Admin/Improve/International. Same applies to Improve, Sell sections etc.
+This is how the directory tree of controllers should look like:
+Controller/ └── Admin ├── Configure │ ├── AdvancedParameters │ └── ShopParameters ├── Improve │ ├── Design │ ├── International │ ├── Modules │ ├── Payment │ └── Shipping └── Sell ├── Catalog ├── Customers ├── CustomerService ├── Orders └── Stats Symfony Controllers should be thin by default and have only one responsibility: getting the HTTP Request from the client and returning an HTTP Response.</description>
+    </item>
+    
+    <item>
       <title>Tags</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/resources/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3086,16 +3244,6 @@ The following instructions only apply to PrestaShop 1.7.2 and later. In previous
 Inside the JS file you added with this hook, you need to create a global object containing your custom configuration:
 window.defaultTinyMceConfig = { [...] } and as you can see in the tinymce core file it will load it instead of the default core configuration.
 Keep in mind that the config is not completely replaced, it&amp;rsquo;s an Object.</description>
-    </item>
-    
-    <item>
-      <title>Tips and tricks</title>
-      <link>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-tips/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/development/internationalization/translation/translation-tips/</guid>
-      <description>Translation tips and tricks Adding new wordings Wordings for the Core and Native modules can only be translated if they are declared in PrestaShop&amp;rsquo;s default translation catalogue. Therefore, whenever a new wording is added to the core or to a native module, it must be added to the default catalogue as well.
-Normally you would have to manually add each wording the appropriate default catalogue files (located in the app/Resources/translations/default folder).</description>
     </item>
     
     <item>
@@ -3200,7 +3348,8 @@ Example title   </description>
       <guid>https://devdocs.prestashop.com/1.7/development/components/form/types-reference/yes-and-no-choice/</guid>
       <description>YesAndNoChoiceType The YesAndNoChoiceType represents select input with options Yes and No.
 Type options    Option Type Default Description     choices array array By default Yes/No choices are defined   required boolean false Whether field is required or not    Required Javascript components None.
-Preview example   YesAndNoChoiceType rendered in form   </description>
+Code example Add YesAndNoChoiceType to your form.
+&amp;lt;?php use Symfony\Component\Form\AbstractType; use PrestaShopBundle\Form\Admin\Type\YesAndNoChoiceType; class SomeType extends AbstractType { public function buildForm(FormBuilderInterface $builder, array $options) { $builder-&amp;gt;add(&amp;#39;yesandnochoicetype&amp;#39;, YesAndNoChoiceType::class, [ &amp;#39;choices&amp;#39; =&amp;gt; [ &amp;#39;Yes&amp;#39; =&amp;gt; true, &amp;#39;No&amp;#39; =&amp;gt; false, ], ]); } } Preview example   YesAndNoChoiceType rendered in form   </description>
     </item>
     
     <item>

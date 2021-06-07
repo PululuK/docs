@@ -59,5 +59,16 @@ Updated dependencies The following dependencies have been updated in order to pr
    Extension Old version New version     beberlei/doctrineextensions v1.1.9 v1.2.6   behat/transliterator v1.2.0 v1.3.0   composer/ca-bundle 1.1.4 1.2.6   composer/installers v1.</description>
     </item>
     
+    <item>
+      <title>Changes in PrestaShop 1.7.8</title>
+      <link>https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/modules/core-updates/1.7.8/</guid>
+      <description>Notable changes in PrestaShop 1.7.8 PHP support PrestaShop 1.7.8 adds supports for PHP 7.4.
+Updated dependencies The following dependencies have been updated in order to provide support for PHP 7.4:
+Production dependencies    Package name From To Compare     beberlei/doctrineextensions v1.2.6 v1.2.7 &amp;hellip;   composer/ca-bundle 1.2.6 1.2.8 &amp;hellip;   doctrine/annotations v1.8.0 1.10.4 &amp;hellip;   doctrine/cache 1.10.0 1.10.2 &amp;hellip;   doctrine/collections 1.6.4 1.</description>
+    </item>
+    
   </channel>
 </rss>

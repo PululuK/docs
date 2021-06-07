@@ -36,8 +36,7 @@ For instance, this is a legacy template:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/controller-routing/</guid>
-      <description>Controller and Routing Modern/Symfony Controllers Read the Symfony documentation on Controllers and Routing. Every migrated page needs one or more Controllers: if you consider that a legacy Controller needs to be split into multiple controllers (for example: different URLs), it&amp;rsquo;s the right time to do it.
-New controllers should be placed in the src/PrestaShopBundle/Controller/Admin folder. Starting on 1.7.3, controllers are being progressively organized in sub-folders following the Back Office menu. For instance, if you are migrating a page located into &amp;ldquo;Advanced Parameters&amp;rdquo; section, put it into src/PrestaShop/Controller/Admin/Configure/AdvancedParameters.</description>
+      <description>Controller and Routing Before creating a new symfony controller please read and follow principles described in Symfony controllers &amp;amp; routing. Controllers are responsible for performing &amp;ldquo;Actions&amp;rdquo;. Actions are methods of Controllers which mapped to a route, and that return a Response. Migration tips  If you consider that a legacy Controller needs to be split into multiple controllers (for example: different URLs), it&amp;rsquo;s the right time to do it. Controllers are not available for override and can be regarded as internal classes, therefore we don&amp;rsquo;t consider changing Controller&amp;rsquo;s namespace as a backward-compatibility break.</description>
     </item>
     
     <item>
@@ -72,14 +71,13 @@ Access to a lot of data, ordered by column: this data can be simple (text) or mo
     </item>
     
     <item>
-      <title>Testing</title>
-      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/</link>
+      <title>Validation</title>
+      <link>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/validation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/testing/</guid>
-      <description>Testing You are encouraged to add both unit and functional tests for every new class you have created.
-You must add a smoke test (also called &amp;ldquo;survival&amp;rdquo;) for every new page you migrate.
-Smoke testing A smoke test is a really simple and basic test that ensure the page will load with the right HTTP code. This won&amp;rsquo;t ensure the page will works as expected but if the test fails, this ensure the page is not functional.</description>
+      <guid>https://devdocs.prestashop.com/1.7/development/architecture/migration-guide/validation/</guid>
+      <description>Validation The purpose of validation is to protect the application from failures, state inconsistency, security related issues etc. PrestaShop has few different levels of validation:
+ Forms (the CRUD or Settings) - are using Symfony validation constraints to prevent the user from providing invalid information while also enriching the user experience. For example if a form input expects Yes or No, but user submitted value XYZ we want to reject the data and inform the user what was wrong.</description>
     </item>
     
   </channel>
