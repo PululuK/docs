@@ -30,6 +30,18 @@ Most of these Back Office pages have a common HTML structure:
     </item>
     
     <item>
+      <title>Router and Dispatcher component</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/router-dispatcher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/router-dispatcher/</guid>
+      <description>Router and Dispatcher The legacy Dispatcher and the Symfony Router are in charge of parsing incoming HTTP requests and finding the right Controller to return HTTP response.
+Front office routing The Front office controllers lie in the controllers/front directory.
+The Dispatcher matches a given HTTP request with a Front Office controller.
+When you visit / on your shop, you are being returned the Homepage unless you have your shop installed in a subdirectory, then /your_subdirectory is your Homepage.</description>
+    </item>
+    
+    <item>
       <title>The Faceted Search component</title>
       <link>https://devdocs.prestashop.com/1.7/development/components/faceted-search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
