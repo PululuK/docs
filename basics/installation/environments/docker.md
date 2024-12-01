@@ -339,7 +339,7 @@ services:
       image: phpmyadmin/phpmyadmin
       container_name: phpmyadmin
       links:
-        - some-mysql
+        - mysql
       environment:
         PMA_HOST: some-mysql
         PMA_PORT: 3306
