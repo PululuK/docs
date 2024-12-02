@@ -344,6 +344,8 @@ services:
         PMA_HOST: some-mysql
         PMA_PORT: 3306
         PMA_ARBITRARY: 1
+        PMA_USER: root
+        PMA_PASSWORD: admin
       restart: unless-stopped
       ports:
         - 8081:80
