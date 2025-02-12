@@ -2,7 +2,7 @@
 title: Upgrade Process Steps
 weight: 30
 aliases:
-  - /8/development/upgrade-module/
+  - /8/development/update/
 useMermaid: true
 ---
 
