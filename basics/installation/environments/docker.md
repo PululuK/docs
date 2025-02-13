@@ -339,14 +339,18 @@ services:
       image: phpmyadmin/phpmyadmin
       container_name: phpmyadmin
       links:
-        - some-mysql
+        - mysql
       environment:
         PMA_HOST: some-mysql
         PMA_PORT: 3306
         PMA_ARBITRARY: 1
+        PMA_USER: root
+        PMA_PASSWORD: admin
       restart: unless-stopped
       ports:
         - 8081:80
+      networks:
+        - prestashop_network
 ```
 
 And access `http://localhost:8081` to access `phpMyAdmin`.
