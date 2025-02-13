@@ -46,4 +46,4 @@ Then, add the url of the UI tests previously launched directly in your pull requ
 ## 4. Check the `Hook Contribution` label
 We have a specific label for hook contributions, and this label must be added automatically by our bots.
 
-If for some reason the label is not added, please ping the `@PrestaShop/committers` team in the pull request comments!
+If the `Hook Contribution` label is not automatically added, please mention `@PrestaShop/Committers` in a comment on your pull request if you are part of the PrestaShop team. If you are not part of the team, you can directly mention a committer. You can find the list of committers [here](https://www.prestashop-project.org/project-organization/people-and-roles/#committers).
