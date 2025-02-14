@@ -2,7 +2,7 @@
 title: Post-restore checklist
 weight: 60
 aliases:
-  - /8/development/upgrade-module/post-restore-checklist
+  - /8/development/update/post-restore-checklist
 ---
 
 # Post-restore checklist

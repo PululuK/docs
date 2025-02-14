@@ -102,8 +102,8 @@ For a detailed step-by-step guide, refer to the Migration Documentation (link to
 
 ## Read more
 
-- {{< page-link "8/basics/keeping-up-to-date/upgrade" >}}
+- {{< page-link "8/basics/keeping-up-to-date/update" >}}
 - {{< page-link "8/basics/keeping-up-to-date/backup" >}}
 - {{< page-link "8/basics/keeping-up-to-date/migration" >}}
 
-[1]: {{< relref "/8/basics/keeping-up-to-date/upgrade" >}}
+[1]: {{< relref "/8/basics/keeping-up-to-date/update" >}}
