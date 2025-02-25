@@ -40,12 +40,11 @@ Another file is being used to load data during the install process: `install/dat
 Once PrestaShop is installed, the default structure and content files we saw are not used anymore.
 
 If a new release of PrestaShop must bring changes to the existing database, an update file must be created along the `db_structure.sql` update.
-This SQL file will be stored in the [auto upgrade](https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql) module in the folder `/upgrade/sql/`.
+This SQL file will be stored in the [Update Assistant](https://github.com/PrestaShop/autoupgrade/tree/dev/upgrade/sql) module in the folder `/upgrade/sql/`.
 
 Its name is the PrestaShop version on which the change will be applied.
 
-For instance, here is the file *[8.0.0.sql](https://github.com/PrestaShop/autoupgrade/blob/dev/upgrade/sql/8.0.0.sql)*,
-used by shops updating to 8.0.0 or later:
+For instance, here is the file *[8.0.0.sql](https://github.com/PrestaShop/autoupgrade/blob/dev/upgrade/sql/8.0.0.sql)*, used by stores updating to 8.0.0 or later:
 
 ```sql
 [...]
