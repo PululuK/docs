@@ -1,9 +1,8 @@
 ---
 # this page is redirected so it has no content
-# TODO update link to the new Update from the Back-Office page
 layout: redirect
-redirect: /8/basics/keeping-up-to-date/update
+redirect: /8/basics/keeping-up-to-date/update/update-from-the-back-office
 _build:
   list: never
-showOnHomepage: true
+  showOnHomepage: true
 ---
