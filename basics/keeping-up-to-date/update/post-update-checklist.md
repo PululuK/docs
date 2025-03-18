@@ -25,3 +25,4 @@ The following steps will be executed during the upgrade:
 - If you can't access your back office, try enabling the debug mode manually in config/defines.inc.php by setting _PS_MODE_DEV_ to true ([see the dedicated documentation][2])
 
 [1]: {{< relref "/8/basics/keeping-up-to-date/update/update-from-the-cli" >}}
+[2]: {{< relref "/8/development/configuration/configuring-prestashop#enabling-debug-mode" >}}
