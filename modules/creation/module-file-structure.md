@@ -145,7 +145,7 @@ A few details:
 
 ### `logo.png` file
 
-This icon file will be displayed in module listings if present. It needs to be a 32x32 pixel PNG file.
+This icon file will be displayed in module listings if present. It needs to be a PNG file. We recommend a size of 140 x 140 pixels.
 
 ### `mymodule.php` file (main file)
 
