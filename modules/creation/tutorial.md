@@ -272,7 +272,7 @@ To put the finishing touch to this basic module, you should add an icon, which w
 The icon file must respect these requirements:
 
 - It must be placed on the module's main folder.
-- PNG format, 32 by 32 pixels in size.
+- PNG format.
 - Named `logo.png`.
 
 {{% notice tip %}}
