@@ -7,7 +7,7 @@ files:
         url: 'https://github.com/PrestaShop/PrestaShop/blob/8.0.x/src/Adapter/Order/Refund/OrderSlipCreator.php'
         file: src/Adapter/Order/Refund/OrderSlipCreator.php
 locations:
-    - 'front office'
+    - 'back office'
 type: action
 hookAliases:
     - orderSlip
@@ -28,19 +28,18 @@ description: 'This hook is called when a new credit slip is added regarding clie
     array(
       'order' => Order,
       'productList' => array(
-        (int) product ID 1,
-        (int) product ID 2, 
+        (int) order detail ID 1 => Order Slip Detail 1,
+        (int) order detail ID 2 => Order Slip Detail 2,
         ...,
-        (int) product ID n
+        (int) order detail ID n => Order Slip Detail n
       ),
       'qtyList' => array(
-        (int) quantity 1,
-        (int) quantity 2,
+        (int) order detail ID 1 => (int) quantity 1,
+        (int) order detail ID 2 => (int) quantity 2,
         ...,
-        (int) quantity n 
+        (int) order detail ID n => (int) quantity n 
       )
     );
-    The order of IDs and quantities is important!
 ```
 
 ## Call of the Hook in the origin file
