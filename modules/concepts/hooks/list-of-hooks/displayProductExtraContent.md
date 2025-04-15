@@ -36,7 +36,7 @@ protected $expectedInstanceClasses = ['PrestaShop\PrestaShop\Core\Product\Produc
 
 ## Example implementation
 
-This hook has been implemented as an example in our [example-modules repository - demoproductextracontent](https://github.com/PrestaShop/example-modules/tree/master/demoproductextracontent).
+This hook has been implemented as an example in our [example-modules repository - demoproductextracontent](https://github.com/PrestaShop/example-modules/tree/8.x/demoproductextracontent).
 
 ## Hook explained
 

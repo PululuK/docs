@@ -90,4 +90,4 @@ To sum up, there is a list of useful links:
 * [Manage the Command output](https://symfony.com/doc/4.4/console/style.html);
 * [How to inject dependencies](https://symfony.com/doc/4.4/console.html#getting-services-from-the-service-container) in a Command;
 * [How to test a Command](https://symfony.com/doc/4.4/console.html#testing-commands);
-* [Example module how to create console command](https://github.com/PrestaShop/example-modules/tree/master/democonsolecommand);
+* [Example module how to create console command](https://github.com/PrestaShop/example-modules/tree/8.x/democonsolecommand);

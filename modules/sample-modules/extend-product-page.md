@@ -316,13 +316,13 @@ class CombinationFormModifier
 ```
 
 This example will add a `TextType` input on each `Combination` of a `Product`. 
-A complete working example and implementation is available in our [example-module repository](https://github.com/PrestaShop/example-modules/tree/master/demoproductform).
+A complete working example and implementation is available in our [example-module repository](https://github.com/PrestaShop/example-modules/tree/8.x/demoproductform).
 
 ## Add a custom tab to the product page
 
 {{< minver v="8.1.0" >}} introduced a new feature: custom tabs on the product page. 
 
-A complete working example of implementation is available in our [example-module repository](https://github.com/PrestaShop/example-modules/tree/master/demoproductform).
+A complete working example of implementation is available in our [example-module repository](https://github.com/PrestaShop/example-modules/tree/8.x/demoproductform).
 
 - You can extend the product form builder with `actionProductFormBuilderModifier` hook with a created modifier: 
 
@@ -569,8 +569,8 @@ public function hookDisplayAdminProductsExtra(array $params): string
 }
 ```
 
-A complete working example and implementation is available in our [example-module repository](https://github.com/PrestaShop/example-modules/tree/master/demoproductform).
+A complete working example and implementation is available in our [example-module repository](https://github.com/PrestaShop/example-modules/tree/8.x/demoproductform).
 
 ## Handle data modified by FormBuilderModifier
 
-You need to implement the corresponding [`actionAfterCreate<FormName>FormHandler`]({{< relref "/8/modules/concepts/hooks/list-of-hooks/actionAfterCreate<FormName>FormHandler" >}}) or [`actionAfterUpdate<FormName>FormHandler`]({{< relref "/8/modules/concepts/hooks/list-of-hooks/actionAfterUpdate<FormName>FormHandler" >}}) hook, as shown in our [example-module repository](https://github.com/PrestaShop/example-modules/tree/master/demoproductform).
+You need to implement the corresponding [`actionAfterCreate<FormName>FormHandler`]({{< relref "/8/modules/concepts/hooks/list-of-hooks/actionAfterCreate<FormName>FormHandler" >}}) or [`actionAfterUpdate<FormName>FormHandler`]({{< relref "/8/modules/concepts/hooks/list-of-hooks/actionAfterUpdate<FormName>FormHandler" >}}) hook, as shown in our [example-module repository](https://github.com/PrestaShop/example-modules/tree/8.x/demoproductform).

@@ -20,7 +20,7 @@ This form type [was introduced in {{< minver v="8.1.0">}}](https://github.com/Pr
 
 The new product page is based on this form type.
 
-Its usage has been documented in an example module: [`demoproductform`](https://github.com/PrestaShop/example-modules/tree/master/demoproductform).
+Its usage has been documented in an example module: [`demoproductform`](https://github.com/PrestaShop/example-modules/tree/8.x/demoproductform).
 
 The module hooks to `actionProductFormBuilderModifier` to modify the `FormBuilder` for the Product page. 
 The `ProductFormModifier` adds a new `CustomTabType` (created by the module) to the `FormBuilder` (which is a `NavigationTabType`).

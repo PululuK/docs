@@ -34,4 +34,4 @@ description:
 
 ## Example implementation
 
-This hook has been implemented as an example in our [modules examples repository - demomultistoreform](https://github.com/PrestaShop/example-modules/tree/master/demomultistoreform).
+This hook has been implemented as an example in our [modules examples repository - demomultistoreform](https://github.com/PrestaShop/example-modules/tree/8.x/demomultistoreform).
