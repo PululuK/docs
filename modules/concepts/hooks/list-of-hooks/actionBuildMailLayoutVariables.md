@@ -35,4 +35,4 @@ dispatchWithParameters(
 
 ## Example implementation
 
-This hook has been implemented as an example in our [modules examples repository - example_module_mailtheme](https://github.com/PrestaShop/example-modules/blob/master/example_module_mailtheme).
+This hook has been implemented as an example in our [modules examples repository - example_module_mailtheme](https://github.com/PrestaShop/example-modules/blob/8.x/example_module_mailtheme).

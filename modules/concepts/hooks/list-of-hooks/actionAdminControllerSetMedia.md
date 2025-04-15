@@ -29,4 +29,4 @@ dispatchWithParameters('actionAdminControllerSetMedia')
 
 ## Example implementation
 
-This hook has been implemented as an example in our [modules examples repository - demoextendgrid](https://github.com/PrestaShop/example-modules/tree/master/demoextendgrid).
+This hook has been implemented as an example in our [modules examples repository - demoextendgrid](https://github.com/PrestaShop/example-modules/tree/8.x/demoextendgrid).

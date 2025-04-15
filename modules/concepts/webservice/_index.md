@@ -199,7 +199,7 @@ And something like on the next screenshot, if you have articles in the database:
 
 ### Download the example module directly
 
-You can find a complete version of this example module [here](https://github.com/PrestaShop/example-modules/tree/master/demowsextend).
+You can find a complete version of this example module [here](https://github.com/PrestaShop/example-modules/tree/8.x/demowsextend).
 
 ### Test CRUD actions on the entity with Postman
 

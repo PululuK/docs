@@ -421,14 +421,14 @@ Then, find your module (`Demo symfony form configuration`), and click on the `Co
 
 ## Complete example module
 
-The module created in this guide is available [here](https://github.com/PrestaShop/example-modules/tree/master/demosymfonyformsimple).
+The module created in this guide is available [here](https://github.com/PrestaShop/example-modules/tree/8.x/demosymfonyformsimple).
 
 ## Other form types
 
 You can use all [native Symfony Form Types](https://symfony.com/doc/4.4/reference/forms/types.html), and the PrestaShop specific ones: [see Form Types reference]({{<relref "/8/development/components/form/types-reference">}}).
 
 {{% notice note %}}
-Please refer to this example module for a complete implementation of those fields: [DemoSymfonyForm](https://github.com/PrestaShop/example-modules/tree/master/demosymfonyform)
+Please refer to this example module for a complete implementation of those fields: [DemoSymfonyForm](https://github.com/PrestaShop/example-modules/tree/8.x/demosymfonyform)
 {{% /notice %}}
 
 ### Required Javascript for some types
@@ -470,5 +470,5 @@ The JavaScript dependencies of specific types are [described in the form types r
 {{% /notice %}}
 
 {{% notice note %}}
-You can check this module to see an example of using JavaScript components: [DemoSymfonyForm](https://github.com/PrestaShop/example-modules/tree/master/demosymfonyform)
+You can check this module to see an example of using JavaScript components: [DemoSymfonyForm](https://github.com/PrestaShop/example-modules/tree/8.x/demosymfonyform)
 {{% /notice %}}

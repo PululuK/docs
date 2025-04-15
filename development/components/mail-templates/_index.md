@@ -242,7 +242,7 @@ Be aware this operation will **permanently modify** your shop theme's files!
 
 ### Reference
 
-* Here is an [example module](https://github.com/PrestaShop/example-modules/tree/master/example_module_mailtheme) showing how to integrate with the email generation workflow
+* Here is an [example module](https://github.com/PrestaShop/example-modules/tree/8.x/example_module_mailtheme) showing how to integrate with the email generation workflow
 
 ### Module Tutorials
 

@@ -39,7 +39,7 @@ Let's add hook related code to main module class `demovieworderhooks`:
         );
         $bar->add(
             new \PrestaShop\PrestaShop\Core\Action\ActionsBarButton(
-                'btn-dark', ['href' => 'https://github.com/PrestaShop/example-modules/tree/master/demovieworderhooks'], 'Go to GitHub'
+                'btn-dark', ['href' => 'https://github.com/PrestaShop/example-modules/tree/8.x/demovieworderhooks'], 'Go to GitHub'
             )
         );
         $createAnOrderUrl = $router->generate('admin_orders_create');

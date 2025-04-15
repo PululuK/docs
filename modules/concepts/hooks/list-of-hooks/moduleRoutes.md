@@ -177,5 +177,5 @@ class MyModuleAddingRoutes extends Module
 }
 ```
 
-The complete implementation example is available in our [example modules repository](https://github.com/PrestaShop/example-modules/tree/master/demomoduleroutes).
+The complete implementation example is available in our [example modules repository](https://github.com/PrestaShop/example-modules/tree/8.x/demomoduleroutes).
 

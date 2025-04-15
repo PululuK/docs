@@ -27,7 +27,7 @@ EventEmitter.on('PSComponentsInitiated', () => {
 })
 ```
 
-You are able to use a custom component [following this example](https://github.com/PrestaShop/example-modules/blob/master/demosymfonyform/views/js/form.js):
+You are able to use a custom component [following this example](https://github.com/PrestaShop/example-modules/blob/8.x/demosymfonyform/views/js/form.js):
 
 ```js
 $(document).ready(function() {

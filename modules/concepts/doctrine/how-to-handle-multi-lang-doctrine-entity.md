@@ -30,7 +30,7 @@ The content of this documentation relies on **namespaces** which need to be defi
 
 {{% notice tip %}}
 **Example module**
-All the content of this documentation can be found in this [Doctrine example module](https://github.com/PrestaShop/example-modules/tree/master/demodoctrine) which covers all the content of this page and more:
+All the content of this documentation can be found in this [Doctrine example module](https://github.com/PrestaShop/example-modules/tree/8.x/demodoctrine) which covers all the content of this page and more:
 - Multi lang entities
 - Doctrine repositories
 - Form handling

@@ -29,4 +29,4 @@ description: 'This hook launches modules when the back office product page is di
 
 ## Example implementation
 
-This hook has been implemented as an example in our [modules examples repository - demoproductform](https://github.com/PrestaShop/example-modules/tree/master/demoproductform).
+This hook has been implemented as an example in our [modules examples repository - demoproductform](https://github.com/PrestaShop/example-modules/tree/8.x/demoproductform).

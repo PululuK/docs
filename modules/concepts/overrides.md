@@ -111,7 +111,7 @@ It will be copied in `/override/classes/Product.php` during the module installat
 
 {{% notice %}}
 
-There is an example module that overrides `Manufacturer` and adds a field to database. See [DemoOverrideObjectModel](https://github.com/PrestaShop/example-modules/tree/master/demooverrideobjectmodel). Note that **it is always recommended creating custom table and use custom ObjectModel instead of override**.
+There is an example module that overrides `Manufacturer` and adds a field to database. See [DemoOverrideObjectModel](https://github.com/PrestaShop/example-modules/tree/8.x/demooverrideobjectmodel). Note that **it is always recommended creating custom table and use custom ObjectModel instead of override**.
 
 {{% /notice %}}
 

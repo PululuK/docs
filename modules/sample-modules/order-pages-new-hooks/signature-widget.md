@@ -720,4 +720,4 @@ After completing the steps above the result should be visible inside the selecte
  {{< figure src="../../img/view-order-hooks-demo/view-order-demo-result.png" title="Signature card" >}}
 
 Feel free to experiment with other Order view page hooks! You can find demo implementation of these hooks in 
-PrestaShop `example-modules` repository: https://github.com/PrestaShop/example-modules/tree/master/demovieworderhooks
+PrestaShop `example-modules` repository: https://github.com/PrestaShop/example-modules/tree/8.x/demovieworderhooks

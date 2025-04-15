@@ -603,5 +603,5 @@ Let's add `UploadImage` function to main class:
 
 {{% notice note %}}
 You can find the ready solution in PrestaShop example-modules GitHub repository:
-https://github.com/PrestaShop/example-modules/tree/master/demoextendsymfonyform2
+https://github.com/PrestaShop/example-modules/tree/8.x/demoextendsymfonyform2
 {{% /notice %}}
