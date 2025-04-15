@@ -10,4 +10,4 @@ The PrestaShop Community has made example modules and how-to guides to help you 
 
 {{% children /%}} 
 
-{{% remoteMd "https://api.github.com/repos/PrestaShop/example-modules/contents/README.md" %}}
+{{% remoteMd "https://api.github.com/repos/PrestaShop/example-modules/contents/README.md?ref=8.x" %}}
