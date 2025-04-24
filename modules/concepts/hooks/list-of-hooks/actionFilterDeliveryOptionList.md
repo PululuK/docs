@@ -61,7 +61,7 @@ class MyCarrierConditionDisablerModule extends Module
         return parent::install() && $this->registerHook('actionFilterDeliveryOptionList');
     }
 
-    public function hookActionCustomFilterDeliveryOptionList($params)
+    public function hookActionFilterDeliveryOptionList($params)
     {
         $deliveryOptionList = $params['delivery_option_list'];
         
